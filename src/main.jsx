@@ -4,6 +4,7 @@ import { createHashRouter, createRoutesFromElements, Route, Router, RouterProvid
 import { RootLayout } from './layout/RootLayout'
 import { Home } from './pages/Home'
 import { QRgenerator } from './pages/QRgenerator'
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const router = createHashRouter (
   createRoutesFromElements(

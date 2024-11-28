@@ -1,0 +1,12 @@
+
+.qr-container {
+    max-width: 600px !important;
+    background-color: aquamarine;
+}
+
+@media (max-width: 500px) {
+    .button-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+}
