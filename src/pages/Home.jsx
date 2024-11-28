@@ -6,5 +6,5 @@ export const Home = () => {
     <div>Home
       <Link to="/QR">QR</Link>
     </div>
-  )
+  ) 
 }
