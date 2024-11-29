@@ -11,7 +11,7 @@ export const QRgenerator = () => {
     setTimeout(() => {
       try{
         var url = `https://api.qrserver.com/v1/create-qr-code/?size=${width}x${width}&data=${encodeURIComponent(qrdata)}`;
-        setqrdata(url)
+        setImg(url);
       }
       catch(error){
         console.log("Errorr occur while generating QR :",error);
