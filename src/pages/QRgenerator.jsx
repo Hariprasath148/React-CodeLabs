@@ -8,16 +8,17 @@ export const QRgenerator = () => {
   const [width,setwidth] = useState(150);
   function generateQR(){
     setloading(true);
-    try{
-      let url = `https://api.qrserver.com/v1/create-qr-code/?size=${width}x${width}&data=${encodeURIComponent(qrdata)}`;
-      setImg(url);
-    }
-    catch(error){
-      console.log("Errorr occur while generating QR :",error);
-    }
-    finally{
-      setloading(false);
-    }
+    setTimeout(() => {
+      try{
+        var url = `https://api.qrserver.com/v1/create-qr-code/?size=${width}x${width}&data=${encodeURIComponent(qrdata)}`;
+      }
+      catch(error){
+        console.log("Errorr occur while generating QR :",error);
+      }
+      finally{
+        setloading(false);
+      }
+    }, 1000);
   }
 
   function downloadQR(){
