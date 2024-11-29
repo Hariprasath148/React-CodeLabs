@@ -10,7 +10,7 @@ export const QRgenerator = () => {
     setloading(true);
     setTimeout(() => {
       try{
-        var url = `https://api.qrserver.com/v1/create-qr-code/?size=${width}x${width}&data=${encodeURIComponent(qrdata)}`;
+        let url = `https://api.qrserver.com/v1/create-qr-code/?size=${width}x${width}&data=${encodeURIComponent(qrdata)}`;
         setImg(url);
       }
       catch(error){
