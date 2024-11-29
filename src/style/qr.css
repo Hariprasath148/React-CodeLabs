@@ -1,7 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
 
 .qr-container {
-    max-width: 600px !important;
-    background-color: aquamarine;
+    max-width: 500px !important;
+    border-radius: 15px ;
+    box-shadow: #9E72C3 0px 5px 15px 0px; 
+}
+
+.title {
+  font-size: 25px;
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #4A2574;
+}
+
+label {
+  font-size: 17px;
+  color: #4A2574;
+
+}
+
+.form-group input {
+  border : 1px solid #4A2574;
+}
+
+button:nth-child(1) {
+  background-color: #9E72C3;
+  border: none;
+}
+
+button:nth-child(1):hover {
+  background-color: #924DBF;
+  border: none;
+}
+
+button:nth-child(2) {
+  background-color: #7338A0;
+  border: none;
+}
+
+button:nth-child(2):hover {
+  background-color: #4A2574;
+  border: none;
+}
+
+img {
+  box-shadow: #9E72C3 0px 1px 10px 0px;
 }
 
 @media (max-width: 500px) {

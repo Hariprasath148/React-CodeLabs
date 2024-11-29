@@ -34,18 +34,18 @@ export const QRgenerator = () => {
   }
 
   return (
-    <div className="container d-flex align-items-center justify-content-center" style={{height : "100vh" }}>
-      <div className="container qr-container p-3 rounded d-flex flex-column gap-2" >
-        <p className="text-center">QR Code Generator</p>
-        {img && <img className="d-block mx-auto" src={img} alt="qr" />}
+    <div className="container d-flex align-items-center justify-content-center qr" style={{height : "100vh" }}>
+      <div className="container qr-container p-3 d-flex flex-column gap-4" >
+        <p className="text-center title">QR Code Generator</p>
+        {img && <img className="d-block mx-auto p-2" src={img} alt="qr" />}
         {loading && <p className="text-center">Please Wait.....</p>}
         <div className="form-group">
-          <label htmlFor="qr-link">Enter the link</label>
+          <label htmlFor="qr-link" className="mb-2">Enter the link</label>
           <input type="text" className="form-control" id="qr-link" aria-describedby="qr-help" placeholder="Enter Link"  onChange={(e)=>{setqrdata(e.target.value)}}/>
           <small id="qr-help" className="form-text text-muted">Eg : "https://www.google.com"</small>
         </div>
         <div className="form-group">
-          <label htmlFor="qr-width">Enter the QR Size</label>
+          <label htmlFor="qr-width" className="mb-2">Enter the QR Size</label>
           <input type="text" className="form-control" id="qr-width" aria-describedby="width-help" placeholder="Enter Width" onChange={(e)=>{setwidth(e.target.value)}} />
           <small id="width-help" className="form-text text-muted">Eg : "300" </small>
         </div>
